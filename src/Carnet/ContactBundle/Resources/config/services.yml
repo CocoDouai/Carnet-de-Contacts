@@ -1,0 +1,7 @@
+parameters:
+#    carnet_contact.example.class: Carnet\ContactBundle\Example
+
+services:
+#    carnet_contact.example:
+#        class: %carnet_contact.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

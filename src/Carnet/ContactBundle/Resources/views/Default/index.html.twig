@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+
+
+{% block body %}
+    
+<h1>Tous les contacts</h1>
+
+    <a href="{{ path("carnet_contact_ajouter")}}" title="Ajouter une adresse">Ajouter</a></h2>
+    {% for adresse in adresses %}
+       
+        {% include "CarnetContactBundle:Default:adresse_content.html.twig" with { 'link': false } %}
+
+    {% endfor %}
+    
+{% endblock %}

@@ -1,0 +1,25 @@
+<article>
+            <header>
+                {% if link %}
+                <h2><a href="{{ path("carnet_contact_afficher", { id: adresse.id }) }}" title="Afficher {{ adresse.name }}">{{ adresse.name }}</a></h2>
+                {% else %}
+                <h2>{{ adresse.name }}</h2>
+                {% endif %}
+                
+                <div class="admin-adresse">
+                    <a href="{{ path("carnet_contact_editer", { id: adresse.id }) }}" title="Editer cet adresse">Editer</a>
+                    <a href="{{ path("carnet_contact_supprimer", { id: adresse.id }) }}" title="Supprimer cet adresse">Supprimer</a>
+                    <a href="{{ path("carnet_contact_homepage", { id: adresse.id }) }}" title="Retour aux Contacts">Accueil</a>
+                </div>
+                
+            </header>
+                <p>
+                   {{ adresse.email }} 
+                </p>
+                <p>
+                   {{ adresse.adresse }} 
+                </p>
+                <p>
+                   {{ adresse.telephone }} 
+                </p>
+</article>

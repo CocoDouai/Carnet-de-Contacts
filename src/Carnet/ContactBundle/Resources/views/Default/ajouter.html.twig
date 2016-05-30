@@ -1,0 +1,13 @@
+{% extends "::base.html.twig" %}
+
+
+{% block body %}
+    
+<h1>Ajouter un contact</h1>
+
+<form action="{{ path("carnet_contact_ajouter") }}" method="post">
+    {{ form_widget(form) }}
+    <input type="submit">
+</form>
+   
+{% endblock %}

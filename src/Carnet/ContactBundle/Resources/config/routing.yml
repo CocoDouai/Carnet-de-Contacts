@@ -1,0 +1,23 @@
+carnet_contact_homepage:
+    path:     /
+    defaults: { _controller: CarnetContactBundle:Default:index }
+
+carnet_contact_ajouter:
+    path:     /ajouter
+    defaults: { _controller: CarnetContactBundle:Default:ajouter }
+    
+carnet_contact_supprimer:
+    path:     /{id}/supprimer
+    defaults: { _controller: CarnetContactBundle:Default:supprimer }
+    
+carnet_contact_editer:
+    path:     /{id}/editer
+    defaults: { _controller: CarnetContactBundle:Default:editer }
+    requirements:
+        id: \d+
+
+carnet_contact_afficher:
+    path:     /{id}/afficher
+    defaults: { _controller: CarnetContactBundle:Default:afficher }
+    requirements:
+        id: \d+
